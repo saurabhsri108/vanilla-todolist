@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <!-- viewport line helps make our project responsive -->
+    <title>To Do List</title>
+    <script type="module" src="js/main.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <section class="new-item-entry">
+            <form action="" id="item-entry-form">
+                <label for="new-item">Enter a new to do item</label>
+                <input type="text" id="new-item" size="40" autocomplete="off" placeholder="Add Item" tabindex="0" />
+                <button id="add-item" class="button" title="Add new item" aria-label="Add new item to list"
+                    tabindex="0">+</button>
+            </form>
+        </section>
+        <section class="list-container">
+            <div class="list-title">
+                <h1 tabindex="0">To Do List</h1>
+                <button id="clear-items" class="button" title="Clear the list"
+                    aria-label="Remove all items from the list" tabindex="0">Clear</button>
+            </div>
+            <hr />
+            <div id="list-items">
+            </div>
+            <p id="confirmation" class="confirmation" aria-live="assertive"></p>
+        </section>
+    </main>
+</body>
+
+</html>
